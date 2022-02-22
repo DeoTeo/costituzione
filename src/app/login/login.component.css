@@ -1,0 +1,35 @@
+.button-timeline {          
+	color: white;
+	display: block;
+    margin: 0 auto; 
+	border-radius: 5px;
+	cursor: pointer;
+	border: none; 
+	font-size: 18px;
+	background-color: rgb(119, 181, 247); 
+	margin-top: 20px
+}
+
+.div-login {
+	width: 320px; 
+	margin: 0 auto; 
+	margin-top: 20px; 
+	background-color: rgb(70, 158, 66);
+	padding: 20px; 
+	border-radius: 20px;
+	color: white;
+}
+
+code-input {
+	--color: #ffffff;
+    --item-spacing: 10px;
+    --item-height: 3em;
+    --item-border: none;
+    --item-border-bottom: 2px solid #ffffff;
+    --item-border-has-value: none;
+    --item-border-bottom-has-value: 2px solid #888888;
+    --item-border-focused: none;
+    --item-border-bottom-focused: 2px solid #ffffff;
+    --item-shadow-focused: none;
+    --item-border-radius: 0px;
+  }

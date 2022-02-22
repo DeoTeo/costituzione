@@ -1,0 +1,58 @@
+span {
+	 font-weight: bold;
+	 background: lightgray;
+	 padding: 0.3em 0.8em;
+	 cursor: pointer;
+	 user-select: none;
+}
+ 
+table {
+  border-spacing: 12px;
+  border-collapse: separate;
+}
+
+.spacer {          /*    SPAZIATURA VERTICALE DI ALTEZZA(HEIGHT) PREDEFINITA, in html: <div class="spacer"></div>     */
+	margin:0; 
+	padding:0; 
+	height:50px; 
+}
+
+.button-timeline {          
+	color: white;
+	display: block;
+    margin: 0 auto; 
+	border-radius: 5px;
+	cursor: pointer;
+	border: none; 
+	font-size: 18px;
+	background-color: rgb(93, 155, 255); 
+}
+
+.span-istr {
+	 font-weight: normal;
+	 background: none;
+	 padding: 0.3em 0.8em;
+	 cursor: pointer;
+	 user-select: none;
+}
+
+.content{
+    height:20px;
+    width:200px;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+
+input[type='checkbox'] { visibility: hidden; position: absolute; }
+input[type='checkbox']:checked + .content { height: auto; width: auto;}
+
+a {
+  background-color: rgb(70, 158, 66);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px;
+  border-radius: 10px
+}

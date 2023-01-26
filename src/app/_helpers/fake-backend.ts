@@ -3,11 +3,7 @@ import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTT
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
-let users = [{ id: 1, firstName: 'Matteo', lastName: 'Terzaghi', username: 'mterzaghi', password: 'Matteo94@' },
-			 { id: 2, firstName: 'Matteo', lastName: 'Vecchia', username: 'mvecchia', password: 'Matteo03@' },
-			 { id: 3, firstName: 'Ospite', lastName: 'Ospiti', username: 'ospiti', password: 'Ospiti@01' },
-			 { id: 4, firstName: 'codice', lastName: 'codice', username: 'codice', password: '310897' }
-];
+let users = [{ id: 4, firstName: 'codice', lastName: 'codice', username: 'codice', password: '314159' }];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -28,7 +24,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 default:
                     // pass through any requests not handled above
                     return next.handle(request);
-            }    
+            }
         }
 
         // route functions

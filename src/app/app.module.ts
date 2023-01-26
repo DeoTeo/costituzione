@@ -16,6 +16,8 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { VimeModule } from '@vime/angular';
 import { CodeInputModule } from 'angular-code-input';
 
+import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,8 @@ import { CodeInputModule } from 'angular-code-input';
   providers: [
 		{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+        { provide: APP_BASE_HREF, useValue: '/' },
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
 		fakeBackendProvider    // provider usato per creare fake backend
   ],
   bootstrap: [AppComponent]
